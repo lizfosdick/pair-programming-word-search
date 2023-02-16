@@ -1,6 +1,5 @@
 const wordSearch = (letters, word) => { 
-    
-  const transpose = function(letters) {
+   
     let newArray = [];
     for (let i = 0; i < letters[0].length; i++) {
       newArray[i] = [];
@@ -15,9 +14,7 @@ const wordSearch = (letters, word) => {
     for (l of verticalJoin) {
         if (l.includes(word)) return true;
     }
-    };
-
- 
+    
     
 
     const horizontalJoin = letters.map(ls => ls.join(''))
@@ -25,9 +22,7 @@ const wordSearch = (letters, word) => {
         if (l.includes(word)) return true;
     }
     return false;
-}
-
-
+  };
 
 
 module.exports = wordSearch

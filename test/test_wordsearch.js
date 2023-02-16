@@ -35,4 +35,21 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+  
+  it("should return true if the word is present", function() {
+    const result = wordSearch([
+      ['A', 'W', 'C', 'F', 'Q', 'U', 'A', 'L'],
+      ['S', 'E', 'I', 'N', 'F', 'E', 'L', 'D'],
+      ['Y', 'F', 'C', 'F', 'Q', 'U', 'A', 'L'],
+      ['A', 'M', 'J', 'T', 'E', 'V', 'R', 'G'],
+      ['P', 'H', 'C', 'S', 'Y', 'E', 'R', 'L'],
+      ['P', 'F', 'R', 'E', 'N', 'E', 'Y', 'B'],
+      ['L', 'B', 'T', 'W', 'A', 'P', 'A', 'I'],
+      ['E', 'D', 'C', 'A', 'K', 'U', 'A', 'S'],
+      ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
+    ], 'APPLE');
+
+    assert.isTrue(result);
+  });
+
 });
